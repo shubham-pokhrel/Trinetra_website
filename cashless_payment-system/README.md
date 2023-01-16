@@ -1,1 +1,0 @@
-# Trinetra_website
