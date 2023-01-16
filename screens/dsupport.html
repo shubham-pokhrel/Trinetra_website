@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+        <!-- main color #040505
+        second main #1a1b1a
+        third main #3e3f3e
+        fourth main #a4a5a4
+        fifth main #d7d7d6  --> 
+		<meta charset = "UTF-8">
+		<title> trinetra main page </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+              }
+              body{
+                color: white;
+              }
+              .background{
+                width: 100%;
+                height: 100vh;
+                color: aliceblue;
+                background-color: #040505;
+                background-image: url("/assets/nepalb40.jpeg");
+                background-size: cover;
+                position: relative
+              }
+              nav{
+                background-color: #040505;
+                opacity: 0.6;
+                width: 100%;
+                height: 10%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              }
+              nav .logo{
+                width: 100px;
+              }
+              nav ul li{
+                list-style: none;
+                display: inline-block;
+                margin-left: 50px;
+                margin-right: 100px;
+              }
+              nav ul li a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+              }
+              nav ul li a:hover{
+                color: #797979;
+                transition: 0.3s;
+              }
+              .support{
+               /* height: 95%; */
+               position: relative;
+               top: 35%;
+               text-align: center;
+               justify-content: center;
+               padding: 1%;
+               overflow: hidden;
+              }
+              .section{
+              margin-top: 40%;
+               border: 3px solid rgb(194, 191, 191);
+               border-radius: 8%;
+               padding: 1%;
+               padding-top: 4%;
+               padding-bottom: 4%;
+               height: 20%;
+               box-shadow: 4px 6px 4px 2px #211f1f;
+               width: 30%;
+               float: left;
+               margin: 1%;
+              }
+              .section h2{
+                margin-bottom: 5%;
+              }
+              .footer{
+                background-color: #040505;
+                text-align: center;
+                height: 5%;
+                width: 100%;
+                top: 95%;
+                left: 0;
+                color: white;
+                position: absolute;
+              }
+              .footer p{
+                padding-top: 10px;
+              }
+        </style>
+	</head>
+	<body>
+		<div class="background">
+            <nav>
+                <img src="/assets/TrinetraLogo.png" class="logo" alt="failed to load logo">
+                <ul>
+                    <li><a href="/screens/darkmpage.html">Home</a></li>
+                    <li><a href="/screens/dservices.html">Services</a></li>
+                    <li><a href="/screens/dsupport.html">Support</a></li>
+                    <li><a href="/screens/darklogin.html">Login</a></li>
+                    <li><a href="/screens/darksignup.html">Signup</a></li>
+                </ul>
+            </nav>
+            <div class="support">
+              <div class="section" id="business">
+                  <h2>Business Inquiry</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quos corporis libero praesentium! Recusandae suscipit, nisi.</p>
+              </div>
+              <div class="section" id="care">
+                  <h2>Customer Care</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam modi labore similique voluptate ipsam non sit, dolore minima iusto ex!</p>
+              </div>
+              <div class="section" id="feedback">
+                  <h2>Feedback</h2>
+                  <p>Help us to improve our services. Tell us your experience, your problem or any kind of issues. How can we improve?  </p>
+              </div>
+            </div>
+            <div class="footer">
+                <p> &copy; 2023 Trinetra Inc.&#8482; &nbsp; Kathmandu, Nepal. &nbsp; All Rights Reserved.</p>
+            </div>
+        </div>
+	
+	</body>
+</html>
