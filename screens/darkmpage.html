@@ -24,9 +24,8 @@
                 height: 100vh;
                 color: aliceblue;
                 background-color: #040505;
-                background-image: url("../assets/nepalb40.jpeg");
+                background-image: url("/black/nepalb40.jpeg");
                 background-size: cover;
-                position: relative
               }
               nav{
                 background-color: #040505;
@@ -46,31 +45,33 @@
               nav ul li{
                 list-style: none;
                 display: inline-block;
-                margin: 20px 50px;
               }
               nav ul li a{
                 float: right;
+                margin: 27px 50px;
                 text-decoration: none;
                 color: white;
                 text-align: center;
                 font-size: 20px;
+                padding: 2%;
+              }
+              nav ul li:hover{
+                background-color: rgb(85, 84, 84);
               }
               .locations{
                 position: absolute;
-                float: left;
                 background-color: white;
                 border-radius: 13px; 
                 width: 30%;
+                height: 40%;
                 color: #040505;
                 top: 30%;
                 margin-left: 1%;
                 left: 10px;
-                height: 40%;
                 text-align: center;
                 padding: 1%;
                 padding-bottom: 1%;
                 opacity: 0.7;
-                overflow: hidden;
                 box-shadow: 15px 8px 15px 8px #040505;
               }
               .section {
@@ -93,6 +94,80 @@
                 background-color: #3a3b3a;
                 transition: 0.5s;
               }
+              .park{
+                width: 40%;
+                height: 60%;
+                top: 22%;
+                left: 55%;
+                position: absolute;
+                text-align: center;
+                border: 2px solid white;
+                background-color: rgb(29, 29, 29);
+                opacity: 0.8;
+                border-radius: 20px;
+              }
+              .park h3{
+                margin: 1%;
+              }
+              .selection{
+                background-color: #a1a3a3;
+                border-radius: 30px;
+                height: 85%;
+                top: 13%;
+                margin: 0 2%;
+                overflow: hidden;
+                width: 96%;
+                position: absolute;
+              }
+              .line1{
+                border-left: 3px dashed black;
+                height: 85%;
+                position: absolute;
+                top: 10%;
+                left: 60%;
+              }
+              .line2{
+                border-left: 3px dashed black;
+                position: absolute;
+                top: 10%;
+                height: 85%;
+                left: 40%;
+              }
+              .line3{
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                height: 90%;
+                padding: 0 5%;
+                background-image: linear-gradient(to bottom, #a1a3a3 50%, black 1%);
+                background-position: left;
+                background-size: 6% 10%;
+                background-repeat: repeat-y;
+              }
+              .selection input[type="submit"]{
+                margin: 4% 3%;
+                width: 30%;
+                height: 20%;
+                border-radius: 18px;
+                border-top: 3px dashed black;
+                border-bottom: 3px dashed black;
+                border-left: 0;
+                opacity: 0.7;
+                border-right: 0;
+              }
+              .selection input[type="submit"]:hover{
+                background-color: rgb(98, 97, 97);
+                transition: 0.5s;
+              }
+              .selection input[type="submit"]:nth-child(odd){
+                float: right;
+                rotate: 160deg;
+                transform: rotate(180deg);
+              }
+              .selection input[type="submit"]:nth-child(even){
+                float: left;
+                rotate: 20deg;
+              }
               .footer{
                 background-color: #040505;
                 text-align: center;
@@ -110,16 +185,17 @@
 	</head>
 	<body>
 		<div class="background">
+
             <nav>
-                <img src="../assets/TrinetraLogo.png" class="logo" alt="failed to load logo">
+                <img src="/black/TrinetraLogo.png" class="logo" alt="failed to load logo">
                 <ul>
-                    <li><a href="/test/Trinetra_website/screens/darkmpage.html">Home</a></li>
-                    <li><a href="/test/Trinetra_website/screens/dservices.html">Services</a></li>
-                    <li><a href="/test/Trinetra_website/screens/dsupport.html">Support</a></li>
-                    <li><a href="/test/Trinetra_website/screens/darklogin.html">Login</a></li>
-                    <li><a href="/test/Trinetra_website/screens/darksignup.html">Signup</a></li>
+                    <li><a href="/black/darkmpage.html">Home</a></li>
+                    <li><a href="/black/dservices.html">Services</a></li>
+                    <li><a href="/black/dsupport.html">Support</a></li>
+                    <li><a href="/black/darklogin.html">Login</a></li>
+                    <li><a href="/black/darksignup.html">Signup</a></li>
                 </ul>
-            </nav>
+             </nav>
 
             <div class="locations">
                 <form action="backend.php">
@@ -159,14 +235,29 @@
                 </div>
             </div>
 
-            <div class="status">
+            <div class="park">
+              <h3>Number of parking spot: </h3>
+              <h3>Available spot: </h3>
+              <div class="selection">
+      
+                  <form action="spot.php"></form>
+                  <input type="submit" value="Spot 1">
+                  <input type="submit" value="Spot 2">
+                  <input type="submit" value="Spot 3">
+                  <input type="submit" value="Spot 4">
+                  <input type="submit" value="Spot 5">
+                  <input type="submit" value="Spot 6">
+                  
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                  
+              </div>
+          </div>
 
-            </div>
+          <div class="footer">
+              <p> &copy; 2023 Trinetra Inc.&#8482; &nbsp; Kathmandu, Nepal. &nbsp; All Rights Reserved.</p>
+          </div>
 
-            <div class="footer">
-                <p> &copy; 2023 Trinetra Inc.&#8482; &nbsp; Kathmandu, Nepal. &nbsp; All Rights Reserved.</p>
-            </div>
-        </div>
-	
 	</body>
 </html>
