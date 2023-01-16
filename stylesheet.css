@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #e6dff5;
+    color: white;
+}
+.header{
+    border: 1px solid #714fb0;
+    background-color: #7052a6;
+    width: 100%;
+    padding: 20px;
+}
+h1{
+    font-family: cursive;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    padding: 2%;
+    text-align: center;
+}
+h3{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+p{
+    padding: 20px;
+    text-align: center;
+}
+.heading {
+    margin: 5%;
+}
+.mainsectiion {
+    height: 606px;
+}
+.card {
+    color: white;
+    width: 20%;
+    height: 200px;
+    padding: 60px;
+    border-radius: 20px;
+    background-color: #3f286b;
+    background-image: url("../image/card.png");
+    box-shadow: 1px 15px 18px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    
+    float: left;
+    margin-top: 13%;
+    margin-left: 5%;
+}
+
+a:hover {
+    width: 21%;
+    height: 210px;
+    transition: 0.6s ease;
+}
+.aside {
+    width: 40%;
+    /* border: 2px solid #3f286b; */
+    background-color: #3f286b;
+    box-shadow: 1px 15px 18px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin-top: 9%;
+    margin-right: 4%;
+    float: right;
+    padding: 20px;
+}
+.separate{
+    border-radius: 25px;
+}
+/*.footer {
+    border: 2px solid #3f286b;
+    background-color: #3f286b;
+    margin-bottom: 626px;
+    width: 100%;
+    clear: both;
+    position: absolute;
+
+}*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3f286b;
+    color: white;
+    text-align: center;
+ }
+table { 
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    margin: 4%;
+    width: 92%;
+}
+thead tr {
+    border: 2px solid  rgb(101, 73, 191);
+    background-color: rgb(101, 73, 191);
+}
+tr {
+    border-bottom: 1px solid  rgb(101, 73, 191);
+    background-color: rgb(101, 73, 191);
+}
+a.separate:hover {
+    width: 10%;
+    height: 15%;
+}
+th, td {
+     padding: 10px;
+     text-align: center;
+     /* border-radius: 5px; */
+}
